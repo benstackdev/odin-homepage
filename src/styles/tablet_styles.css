@@ -1,4 +1,4 @@
-@media (600px < width < 1200px) {
+@media (800px < width < 1200px) {
   main {
     margin: 2rem auto 0 auto;
     max-width: 90%;
@@ -41,6 +41,10 @@
   
   .footer-content {
     margin: 2rem auto;
-    max-width: 90%;
+    max-width: min(70%, 1280px);
+
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
   }
 }
