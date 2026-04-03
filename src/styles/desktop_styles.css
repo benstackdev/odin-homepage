@@ -1,29 +1,9 @@
-body {
-  margin: 4rem auto;
-  max-width: 70%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+main {
+  margin: 4rem auto 0 auto;
+  max-width: min(70%, 1280px);
 }
 
-body::before {
-  z-index: -999;
-
-  content: "";
-  position: absolute;
-  top: -15%;
-  left: 0;
-
-  width: 100%;
-  height: 40%;
-
-  transform: skewY(-12deg);
-
-  background-color: var(--color-primary);
-}
-
-.about, .projects, footer {
+.about, .projects {
   margin: 4rem;
 }
 
@@ -37,7 +17,7 @@ body::before {
 .about-image {
   flex-shrink: 0;
   
-  width: 40%;
+  width: min(40%, 400px);
   aspect-ratio: 1 / 1;
 
   background-color: var(--color-background);
@@ -82,11 +62,11 @@ body::before {
   gap: 0.5rem;
 }
 
-.about-socials img {
+.about-socials img, .footer-socials img {
   width: 2rem;
 }
 
-.about-socials img:hover {
+.about-socials img:hover, .footer-socials img:hover {
   cursor: pointer;
 }
 
@@ -94,4 +74,72 @@ body::before {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
   gap: 1rem;
+}
+
+.project-links {
+  display: flex;
+  align-items: space-between;
+}
+
+.project-links img {
+  width: 1.5rem;
+}
+
+footer {
+  margin-bottom: 0;
+
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+.footer-content {
+  margin: 2rem auto;
+  max-width: min(70%, 1280px);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text {
+  margin-left: 4rem;
+  
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.75rem;
+}
+
+.footer-image {
+  margin-right: 4rem;
+  
+  width: min(40%, 300px);
+  aspect-ratio: 1 / 1;
+
+  background-color: var(--color-background);
+  background-image: url("../../assets/images/benstack_transparent.png");
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 1rem;
+}
+
+.footer-telephone, .footer-email {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-telephone-icon, .footer-email-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: cover;
+}
+
+.footer-telephone-icon {
+  background-image: url("../../assets/images/phone-solid-full.svg");
+}
+
+.footer-email-icon {
+  background-image: url("../../assets/images/envelope-regular-full.svg");
 }
