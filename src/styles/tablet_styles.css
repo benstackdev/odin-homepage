@@ -1,0 +1,46 @@
+@media (600px < width < 1200px) {
+  main {
+    margin: 2rem auto 0 auto;
+    max-width: 90%;
+  }
+  
+  .about {
+    display: flex;
+    justify-content: center;
+
+    height: 25%;
+  }
+  
+  body::before {
+    top: -85%;
+  }
+
+  .about-image {
+    width: 16rem;
+    height: 16rem;
+
+    border-radius: 1rem;
+
+    font-size: 1.5rem;
+
+    position: absolute;
+    top: 1%; 
+    left: 5%;
+  }
+  
+  .about-card {
+    width: 100%;
+
+    border-radius: 1rem;
+    padding-left: 14rem;
+  }
+  
+  .projects-grid {
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  }
+  
+  .footer-content {
+    margin: 2rem auto;
+    max-width: 90%;
+  }
+}

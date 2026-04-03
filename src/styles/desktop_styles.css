@@ -98,6 +98,7 @@ footer {
 
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .footer-text {
@@ -110,8 +111,9 @@ footer {
 }
 
 .footer-image {
+  flex-shrink: 0;
   margin-right: 4rem;
-  
+
   width: min(40%, 300px);
   aspect-ratio: 1 / 1;
 
