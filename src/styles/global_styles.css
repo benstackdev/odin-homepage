@@ -5,17 +5,17 @@
   --color-background: #121113;
   --color-primary: #f7f7f2;
   --color-accent: #899878;
+
+  background-color: var(--color-background);
+  color: var(--color-primary);
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
-  background-color: var(--color-background);
-  color: var(--color-primary);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Noto Serif';
+  font-family: 'Supreme-Variable';
 }
