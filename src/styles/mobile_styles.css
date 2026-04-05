@@ -1,4 +1,4 @@
-@media (width < 800px) {
+@media (width <= 700px) {
   body::before {
     top: -80%;
   }
@@ -43,6 +43,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .project-item {
+    justify-self: center;
+    width: clamp(50%, 280px, 100%);
+  }
+
+  .project-info {
+    height: 35%;
   }
 
   .projects-grid {

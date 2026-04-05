@@ -1,4 +1,4 @@
-@media (800px < width < 1200px) {
+@media (700px < width < 1300px) {
   main {
     margin: 2rem auto 0 auto;
     max-width: 90%;
@@ -27,16 +27,25 @@
     top: 1%; 
     left: 5%;
   }
-  
+
   .about-card {
     width: 100%;
 
     border-radius: 1rem;
     padding-left: 14rem;
   }
-  
+
   .projects-grid {
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  }
+
+  .project-item {
+    justify-self: first baseline;
+    width: 100%;
+  }
+
+  .project-info {
+    width: 100%;
   }
   
   .footer-content {

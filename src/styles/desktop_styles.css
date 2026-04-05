@@ -76,6 +76,16 @@ main {
   gap: 1rem;
 }
 
+.project-item {
+  justify-self: first baseline;
+  width: 100%;
+}
+
+.project-info {
+  width: 100%;
+  height: fit-content;
+}
+
 .project-links {
   display: flex;
   align-items: space-between;
